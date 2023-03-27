@@ -1,0 +1,343 @@
+form
+{
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	margin: 10px;
+	padding-bottom: 30px;
+		
+}
+
+.Container
+{
+	padding-left: 300px;
+	padding: 2px;
+	background-image: linear-gradient(2deg, #b8c6db 0%, #f5f7fa 74%);
+	border-radius: 3px;
+}
+
+.grid-wrapper
+{
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+}
+
+.zone
+{
+	/*display: flex;
+	width: 100%;*/
+	margin: 20px;
+	padding: 60px;
+	padding-right: 100px;
+	border-radius: 10px;
+}
+
+.bg
+{
+	background-color:rgb(92 189 187 / .3);
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.bg-blue
+{
+	background-color: #dfe1e4;
+}
+
+
+.bold
+{
+font-weight: bold;
+}
+
+.l-input
+{  
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.m-input
+{
+  width: 70%;
+  padding: 10px 17px;
+  margin: 5px 10px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;	
+}
+
+.xs-input
+{
+	width: 4em;
+	height: 2em;
+	padding: 8px 17px;
+	margin: 8px;
+	margin-left: 0;
+	margin-right: 15px;
+}
+
+
+/*.zone>div{
+	width: 100%;
+}*/
+
+#Address, #CAddress
+{   
+	/*width: 400px;*/
+	/*border-width: 2px;
+	border-radius: 3px;*/
+	width: 100%;
+	padding: 8px 20px;
+	margin: 8px 0;
+ 	border: 2px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.Box
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border-radius: 5px;	
+	/*width: 100%;*/
+}
+
+
+.wrap
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gap 
+{
+grid-gap: 50px;
+}
+
+/***********************************************************************
+ *  Increase size of radio input
+ **********************************************************************/
+.r-input
+{
+	-ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+/***********************************************************************
+ *  Input field glow
+ **********************************************************************/
+.l-input:focus, .m-input:focus, .r-input:focus
+{
+/*  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;*/
+  box-shadow: 0 0 8px rgba(24, 133, 237, 1);
+  border: 1px solid rgba(24,133,237, 1);
+  outline: none;
+}
+
+.push
+{
+	margin-left: 10px;
+}
+
+.push-rt
+{
+	margin-left: 50px;
+}
+
+.push-rtx
+{
+	display: block;
+	margin-left: auto;
+	margin-right: 0 ;
+}
+
+.push-bottom
+{
+	margin-bottom: 100px;
+}
+
+.to-left
+{
+	margin-left: 0px;
+}
+
+
+/* ***********************************
+Green Button
+*******************/
+.button-41 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  /*display: inline-block;*/
+  /* display: block; */
+ font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  /* vertical-align: top; */
+  white-space: nowrap;
+   width: 10em; /*Property is ignored due to the display. With 'display: block', vertical-align should not be used.  */
+ 
+   z-index: 9;
+  border: 0;
+}
+
+.button-41:hover {
+  background: #00bd68;
+}
+
+
+@media only screen and (max-width: 600px) {
+/*  .first {
+        font-size: 0.55em;
+        padding: 0px;
+
+    }
+  */
+  .l-input,.Box,.m-input{
+    	width: 50vw;
+    	margin-left: 0;
+   }
+
+   .push-rt
+   {
+   		margin-left: 15px;
+   }
+	.zone> div
+	{
+	margin-right: auto;
+	}
+	.wrap
+	{
+		display: block;
+	}
+	.button-41
+	{
+		margin-right: auto;
+	}
+
+}
+
+
+/*.spread
+{
+	margin-left: 80px;
+	margin-right: 40px;
+}*/
+
+/*#form-head
+{
+	display: flex;
+	justify-content: center;
+	flex-grow: 2;
+}*/
+
+/*#names
+{
+	display: flex;
+	justify-content: space-around;
+	border: 3px solid indianred;
+	margin: 20px;
+	padding: 20px;
+}*/
+
+/*#firstname
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#fname 
+{
+	margin-left: 20px;
+}
+
+#lastname
+{
+	display: flex;
+	justify-content: center;
+}
+
+#lname 
+{
+	margin-left: 20px;
+}*/
+
+/*#contacts
+{
+	display: flex;
+	justify-content: space-around;
+	border: 3px solid indianred;
+	margin: 20px;
+	padding: 20px;
+	padding-left: 73px;
+}*/
+
+/*
+#Birthdaygender
+{
+	display: flex;
+	justify-content:space-around;
+	border: 3px solid indianred;
+	margin: 20px;
+	padding: 20px;
+	padding-left: 70px;
+	align-items: center;
+
+
+}
+
+#Birthday
+{
+	display: flex;
+	margin-left: -100px;
+}
+
+#birthday
+{
+	margin-left: 10px;
+}*/
+
+/*.head
+{
+	display: flex;
+	justify-content: center;
+}
+*/
+
+
+/*.Block
+{
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+*/
+/*.large
+{
+	height: 250px;
+}
+*/
